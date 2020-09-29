@@ -212,7 +212,6 @@ button {
 }
 
 .journal {
-  margin-top: 65px;
   max-width: 780px;
   margin-bottom: 65px;
 }
@@ -477,6 +476,10 @@ aside section {
   top: -5px;
 }
 
+.products {
+  margin-bottom: 65px;
+}
+
 .products__list {
   display: flex;
   justify-content: space-between;
@@ -544,6 +547,10 @@ aside section {
   width: 50%;
 }
 
+.text-link {
+  color:  #b59f5b;
+}
+
 .socials {
   background-color: #f4f7f6;
   margin-bottom: 75px;
@@ -606,4 +613,116 @@ aside section {
   margin-bottom: 40px;
 }
 
+.popup {
+ 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
 
+.popup__page {
+  position: relative;
+  width: 390px;
+  height: 590px;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 50px 30px;
+  z-index: 60;
+}
+
+.popup__close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url(../svg/form-x.svg);
+  right: 0;
+  top: -30px;
+}
+
+.feedback {
+  margin-top: -15px;
+}
+
+.feedback__desc {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.select__redesign {
+  position: relative;
+  background-color: #f4f7f6;
+  overflow: hidden;
+}
+
+.select__redesign::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 12px;
+  background-image: url(../svg/form-arrows.svg);
+  background-size: contain;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #7b6f3d;
+  z-index: 50;
+}
+
+.select__redesign .select {
+  position: relative;
+  outline: none;
+  border: none;
+  background: transparent;
+  width: 120%;
+  box-sizing: border-box;
+  padding: 20px;
+  z-index: 70;
+}
+
+.form__row {
+  margin-bottom: 30px;
+}
+
+.radio__input {
+  display: none;
+}
+
+.feedback__label {
+  position: relative;
+  margin-left: 25px;
+  margin-right: 20px;
+}
+
+.feedback__label::before {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: -25px;
+  bottom: 1px;
+  background-image: url(../svg/form-empty-circle.svg);
+  background-size: contain;
+  z-index: 60;
+}
+
+.radio__input:checked + .feedback__label::before {
+  background-image: url(../svg/form-circle.svg);
+}
+
+.text__input {
+  width: 100%;
+  height: 130px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #f4f7f6;
+  outline: none;
+  resize: none;
+}
