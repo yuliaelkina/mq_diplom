@@ -211,6 +211,7 @@ button {
 @media screen and (max-width: 360px) {
     .main-page {
       height: 100vh;
+      min-height: 570px;
       background-image: url(../images/banner-mobile.jpg);
   } 
 }
@@ -294,7 +295,7 @@ button {
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px), (orientation: landscape) and (max-width: 360px) {
   .trend__list {
     min-width: 550px;
     width: 100%;
@@ -705,12 +706,13 @@ aside section {
 }
 
 .products__item {
-  width: 30%;
   position: relative;
+  width: 32%;
   min-height: 440px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -724,17 +726,16 @@ aside section {
 @media screen and (max-width: 360px) {
   .products__item {
   width: 100%;
-  min-height: 350px;
   }
 }
 
 .products__image {
+  max-width: 95%;
+  z-index: -2;
+  object-fit: contain;
+  overflow: hidden;
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -2;
-  width: 85%;
 }
 
 @media screen and (max-width: 360px) {
