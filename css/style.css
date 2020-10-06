@@ -291,8 +291,8 @@ button {
 .trend__list {
   display: flex;
   justify-content: space-between;
-  min-width: 1650px;
-  width: 100%;
+  width: 110%;
+  min-width: 980px;
 }
 
 @media screen and (max-width: 768px), (orientation: landscape) and (max-width: 360px) {
@@ -317,6 +317,7 @@ button {
   width: 24.5%;
   padding: 20px;
   min-height: 21rem;
+  height: fit-content;
   justify-content: center;
   align-items: flex-end;
   background-color: #0f0d0e;
