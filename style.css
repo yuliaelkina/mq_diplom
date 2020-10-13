@@ -303,7 +303,6 @@ button {
 
 @media screen and (max-width: 768px), (orientation: landscape) and (max-width: 360px) {
   .trend__list {
-    min-width: 550px;
     width: 100%;
   }
 }
@@ -311,7 +310,6 @@ button {
 @media screen and (max-width: 360px) {
     
   .trend__list {
-      min-width: 300px;
       width: 100%;
     }
 }
