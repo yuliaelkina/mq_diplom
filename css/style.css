@@ -291,21 +291,25 @@ button {
 .trend__list {
   display: flex;
   justify-content: space-between;
-  width: 110%;
-  min-width: 980px;
+  width: 100%;
+  max-width: 1600px;
+}
+
+@media screen and (max-width: 1100px) {
+  .trend__list {
+    flex-wrap: wrap; 
+  }
 }
 
 @media screen and (max-width: 768px), (orientation: landscape) and (max-width: 360px) {
   .trend__list {
-    min-width: 550px;
     width: 100%;
-    flex-wrap: wrap;
   }
 }
 
-  @media screen and (max-width: 360px) {
-    .trend__list {
-      min-width: 300px;
+@media screen and (max-width: 360px) {
+    
+  .trend__list {
       width: 100%;
     }
 }
@@ -314,7 +318,7 @@ button {
   position: relative;
   box-sizing: border-box;
   display: flex;
-  width: 24.5%;
+  width: 24.8%;
   padding: 20px;
   min-height: 21rem;
   height: fit-content;
@@ -325,7 +329,7 @@ button {
   background-position: center center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
   .trend__item {
     width: 49.9%;
     margin-bottom: 3px;
@@ -619,6 +623,13 @@ aside section {
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 20px;
+}
+
+.mailing__desc {
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
 }
 
 .button {
