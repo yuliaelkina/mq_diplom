@@ -260,14 +260,6 @@ button {
   } 
 }
 
-.trend {
-  margin-top: 4rem;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 4rem;
-  align-items: center;
-}
-
 .title--maincontent {
   position: relative;
   text-transform: uppercase;
@@ -286,6 +278,14 @@ button {
   width: 65px;
   height: 3px;
   background-color: #e1d9bd;
+}
+
+.trend {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+  align-items: center;
 }
 
 .trend__list {
@@ -379,6 +379,12 @@ button {
   z-index: 5;
 }
 
+@media screen and (max-width: 768px) and (min-width: 361px) {
+  .trend__desc {
+    padding: 25px;
+  }
+}
+
 .trend__text {
   font-weight: bold;
   font-size: 1.3rem;
@@ -386,6 +392,12 @@ button {
   text-transform: uppercase;
   color: #fff;
   line-height: 1;
+}
+
+@media screen and (max-width: 550px) and (min-width: 361px) {
+  .trend__text {
+    font-size: 1rem;
+  }
 }
 
 .trend__text:hover {
@@ -441,6 +453,12 @@ object-fit: contain;
 
 .tags__list {
   display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .tags__list{
+  flex-wrap: wrap;
+  }
 }
 
 .tags__item {
@@ -529,9 +547,17 @@ aside section {
   background-color: #e1d9bd;
 }
 
+
+
 .post {
   display: flex;
   margin-bottom: 22px;
+}
+
+@media screen and (max-width: 620px) {
+  .post {
+    flex-direction: column;
+  }
 }
 
 .post:last-child {
@@ -572,6 +598,12 @@ aside section {
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .search__input {
+    width: calc(100% - 50px);
+  }
 }
 
 .search__input::placeholder {
